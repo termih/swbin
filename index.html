@@ -1,0 +1,274 @@
+<!doctype html>
+<html>
+<head>
+<!-- 
+	Copyright (c) 2013-2014 Sallai András 
+	Licenc: GNU GPL v.2
+-->
+<meta charset="utf-8" />
+<title>SWBin</title>
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<div id="content">
+
+
+<div id="leftmenu">
+	<div id="mainmenu" class="notoggledButton">
+	<ul>
+	<li class="fo"><a id="fileMenu">File</a>
+		<ul class="notoggledButton" id="fileListMenuItems">		
+			
+			<li><a href="http://szit.hu/swbin" target="_blank" id="newSwbinMenuItem">New SWbin</a></li>			
+			<li><a id="openMenuItem">Open a file ...</a></li>
+			<li><a id="saveMenuItem">Save a file ...</a></li>			
+			<li><a id="saveMultiFileMenuItem">Save multi files ...</a></li>
+			<li><a id="clearContentMenuItem">Clear Content</a></li>
+			<hr>
+			<li><a id="presentationModeMenuItem">Presentation mode</a></li>
+			<hr>
+			<li><a id="eclipseThemeMenuItem">Eclipse theme</a></li>
+			<li><a id="ambianceThemeMenuItem">Ambiance theme</a></li>
+			<li><a id="monokaiThemeMenuItem">Monokai theme</a></li>
+			<li><a id="cobaltThemeMenuItem">Cobalt theme</a></li>
+			<li><a id="textmateThemeMenuItem">Textmate theme</a></li>
+			<hr>
+			<li><a id="insertLoremIpsumMenuItem">Insert Lorem ipsum</a></li>
+			
+
+		</ul>
+	</li>
+	<li class="fo"><a id="libsMenu">Libs</a>
+		<ul class="notoggledButton" id="libsListMenuItems">		
+			<li><a id="insertJqueryMenuItem">Insert jQuery</a></li>
+			<li><a id="insertJqueryMobileMenuItem">Insert Mobile jQuery</a></li>
+			<li><a id="insertJqueryUiMenuItem">Insert jQuery-UI</a></li>
+			<hr>
+			<li><a id="insertAngularMenuItem">Insert AngularJS</a></li>
+			<li><a id="insertAngularAnimateMenuItem">Insert AngularJS-Animate</a></li>
+			<hr>
+			<li><a id="insertBootStrapMenuItem">Insert BootStrap</a></li>
+		</ul>
+	</li>	
+</ul>
+</div>	
+	<button id="numButton">Numbers</button>
+</div>
+
+
+<div id="menu">
+	<button id="htmlButton">HTML</button>
+	<button id="cssButton">CSS</button>
+	<button id="jsButton">JavaScript</button>
+	<button id="outputButton">Output</button>
+</div>
+
+
+<div id="rightmenu">
+	<input type="checkbox" name="autorun" id="autorun" checked>
+	<label for="autorun">Run</label>
+	<input type="checkbox" name="autorunjs" id="autorunjs">
+	<label for="autorunjs">Run JS</label>
+	<button id="runButton">Run</button>
+	<button id="aboutButton">About</button>
+</div>
+
+
+<div id="panels">
+
+
+<div id="html" class="contentBox">
+<h3>HTML</h3>
+<div id="htmleditor" spellcheck="false"></div>
+</div>
+
+
+<div id="css" class="contentBox">
+<h3>CSS</h3>
+<div id="csseditor" spellcheck="false"></div>
+</div>
+
+
+<div id="js" class="contentBox">
+<h3>JavaScript</h3>
+<div id="jseditor" spellcheck="false"></div>
+</div>
+
+
+<div id="output" class="contentBox">
+	<h3>Output</h3>
+	<div id="outputIn">
+		<iframe id="outputiframe" frameborder="0" sandbox="allow-scripts allow-same-origin allow-forms allow-top-navigation"></iframe>
+		
+	</div>
+</div>
+
+
+</div><!-- panels -->
+</div><!-- content -->
+
+
+<div id="aboutBox">
+Sallai András, 2013, 2014<br>
+<a href="http://szit.hu" target="blank_">http://szit.hu</a><br>
+SWBin 1.1.0<br>
+Licenc: GNU GPL. v2.<br><br>
+<button id="creditionalButton">Creditional</button>
+<button id="descriptionButton">Description</button>
+<button id="shortCutHelpBoxButton">Shortcuts</button>
+</div>
+
+
+<div id="creditionalBox">
+<h3>Description</h3>
+<p>
+Thanks for my student, one of the few student who testing and using this application.
+</p>
+<p>
+Thanks for Eric Bidelman's  "Reading files in JavaScript " <a href="http://www.html5rocks.com/en/tutorials/file/dndfiles/"  target="blank_">blog</a>.
+</p>
+<p>
+Thanks for Ace Google Group.
+</p>
+<p>
+Thanks for Eli Grey your <a href="http://eligrey.com">FileSaver.js</a>.
+</p>
+
+</div>
+
+<div id="descriptionBox">
+<h3>Description</h3>
+<p>
+The goal of application not for share. The goal a tool for education.
+The webpage for this project: <a href="http://szit.hu" target="blank_">http://szit.hu</a>. Online webpage:
+<a href="http://szit.hu/swbin" target="blank_">http://szit.hu/swbin</a>
+</p>
+<p>
+This project using the <a href="http://ace.c9.io/" target="blank_">ACE</a> JavaScript editor.
+</p>
+
+<p>
+	<h3>Features</h3>
+	<ul>
+		<li>Runing from Pendrive</li>
+		<li>More theme</li>
+		<li>Easy insertable jQuery, AngularJS, etc. links </li>
+		<li>File saving and loading.</li>
+	</ul>
+</p>
+
+<p>
+	<h3>Todo</h3>
+	<ul>
+		<li>Resizable editors</li>
+		<li>Setup file</li>
+		<li>Adjustable font size</li>
+	</ul>
+</p>
+
+<p>
+	<h3>Know bugs</h3>
+	<ul>
+		<li>Bad scrollbar handling</li>
+	</ul>
+</p>
+</div>
+
+<input type="file" id="fileselection">
+
+
+<div id="shortCutHelpBox">
+<h3>Shortcuts</h3>
+
+<table>
+	<tr>
+		<th>PC (Window/Linux)</th>
+		<th>Mac</th>
+		<th>Action</th>
+	</tr>
+	<tr>
+		<td>Ctrl+,</td>
+		<td>Command+,</td>
+		<td>Show editor settings</td>
+	</tr>
+	<tr>
+		<td>Ctrl+Shift+D</td>
+		<td>Command+Shift+D</td>
+		<td>Duplicate selection</td>
+	</tr>
+	<tr>
+		<td>Tab</td>
+		<td>Tab</td>
+		<td>Indent</td>
+	</tr>
+	<tr>
+		<td>Ctrl+D</td>
+		<td>Command+D</td>
+		<td>Remove line</td>
+	</tr>
+	<tr>
+		<td>Alt+Delete</td>
+		<td>Ctrl+K</td>
+		<td>Remove to line end</td>
+	</tr>
+	<tr>
+		<td>Alt+Backspace</td>
+		<td>Command+Backspace</td>
+		<td>Remove to line start</td>
+	</tr>
+	<tr>
+		<td>Ctrl+A</td>
+		<td>Command+A</td>
+		<td>Select all</td>
+	</tr>
+	<tr>
+		<td>Ctrl+Z</td>
+		<td>Command+Z</td>
+		<td>Undo</td>
+	</tr>
+	<tr>
+		<td>Ctrl+/</td>
+		<td>Command+/</td>
+		<td>Toggle comment</td>
+	</tr>
+	<tr>
+		<td>Ctrl+F</td>
+		<td>Command+F</td>
+		<td>Find</td>
+	</tr>
+	<tr>
+		<td>Ctrl+K</td>
+		<td>Command+G</td>
+		<td>Find next</td>
+	</tr>
+	<tr>
+		<td>Ctrl+Shift+K</td>
+		<td>Command+Shift+G</td>
+		<td>Find previous</td>
+	</tr>
+	<tr>
+		<td>Shift+Tab</td>
+		<td>Shift+Tab</td>
+		<td>Outdent</td>
+	</tr>
+	<tr>
+		<td>Ctrl+H</td>
+		<td>Command+Option+F</td>
+		<td>Replace</td>
+	</tr>
+	
+</table>
+
+</div>
+
+
+<script src="lib/jquery-1.10.2.min.js"></script>
+<script src="lib/FileSaver.js"></script>
+<script src="lib/ace/ace.js" charset="utf-8"></script>
+<script src="js/script.js"></script>
+
+
+</body>
+</html>

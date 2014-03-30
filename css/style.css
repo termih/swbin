@@ -1,0 +1,259 @@
+/* 
+	Copyright (c) 2013, 2014 Sallai András 
+	Licenc: GNU GPL v.2
+*/
+
+
+#fileselection {
+	display: none;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;	
+}
+
+#panels {
+	position: fixed;	
+	top: 30px;
+	bottom: 0;
+	left: 0;
+	right: 0;	
+	background-color: white;
+	display: relative;
+}
+
+.contentBox {
+	float: left;
+	width: 48%;
+	height: 100%;
+	background-color: white;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #a8a8a8;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border-radius: 5px;	
+}
+
+#html, #css, #js {
+	position: relative;
+}
+
+.contentBoxWidth1 {
+	width: 100%;
+}
+
+.contentBoxWidth2 {
+	width: 49%;
+	width: calc(100% / 2);
+}
+
+.contentBoxWidth3 {
+	width: 33%;
+	width: calc(100% / 3);
+}
+
+.contentBoxWidth4 {
+	width: 25%;
+	width: calc(100% / 4);
+}
+
+#htmleditor {
+	width: 100%;
+	top: 18px;
+	bottom: 0;
+	position: absolute;
+}
+
+#csseditor {
+	width: 100%;
+	top: 18px;
+	bottom: 0;
+	position: absolute;
+
+}
+
+#jseditor {
+	width: 100%;
+	top: 18px;
+	bottom: 0;
+	position: absolute;
+
+}
+
+#outputiframe {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	border-width: 0;
+}
+
+#outputIn {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border-width: 0;	
+	position: absolute;
+	bottom: 0;
+	top: 18px;
+	box-sizing:border-box;
+}
+
+#output {	
+	position: relative;
+	box-sizing: border-box;
+}
+
+h1, h2, h3 {
+	height: 18px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: 12px;
+}
+
+h3 {
+	background-image: linear-gradient(left, rgb(244,244,244) 0%, rgb(187,187,187) 100%);
+	background-image: -webkit-linear-gradient(left, rgb(244,244,244) 0%, rgb(187,187,187) 100%);
+	background-image: -o-linear-gradient(left, rgb(244,244,244) 0%, rgb(187,187,187) 100%);
+	background-image: -moz-linear-gradient(left, rgb(244,244,244) 0%, rgb(187,187,187) 100%);
+	background-image: -ms-linear-gradient(left, rgb(244,244,244) 0%, rgb(187,187,187) 100%);
+	border-radius: 5px 5px 0 0;
+}
+
+#menu {
+	text-align: center;
+	position: relative;
+	top: 3px;	
+}
+
+#leftmenu {
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	z-index: 100;
+	width: 200px;
+}
+
+#rightmenu {
+	position: absolute;
+	top: 3px;
+	right: 3px;
+	z-index: 100;
+	font-size: 12px;
+}
+
+button {
+	border-radius: 5px;
+	margin: 0;
+	border-width: 1px;
+	font-size: 12px;
+}
+
+.notoggledButton {
+	background-image: linear-gradient(left, rgb(244,244,244) 0%, rgb(187,187,187) 100%);
+	background-image: -webkit-linear-gradient(left, rgb(244,244,244) 0%, rgb(187,187,187) 100%);
+	background-image: -o-linear-gradient(left, rgb(244,244,244) 0%, rgb(187,187,187) 100%);
+	background-image: -moz-linear-gradient(left, rgb(244,244,244) 0%, rgb(187,187,187) 100%);
+	background-image: -ms-linear-gradient(left, rgb(244,244,244) 0%, rgb(187,187,187) 100%);
+}
+
+.toggledButton {
+	background-color: white;
+}
+
+#htmlButton {
+	background-color: white;
+}
+
+#outputButton {
+	background-color: white;
+}
+
+
+/* Library menu */
+
+#leftmenu #mainmenu {
+	float:left;
+	font-size: 16px;
+	border-radius: 5px;
+	margin: 3px 0 0 0;
+	padding: 0;
+}
+
+#leftmenu #mainmenu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#leftmenu #mainmenu ul li{
+	font-size: 12px;
+}
+
+
+#leftmenu #mainmenu ul li.fo {
+	float:left;
+	width: 60px;
+}
+
+#leftmenu #mainmenu a {
+	text-decoration: none;
+	padding: 0 5px;
+	text-align: center;
+	color: black;
+	display:block;
+}
+
+#leftmenu #mainmenu a:hover {
+	background-color: yellow;
+	color: black;
+}
+ 
+#leftmenu #mainmenu ul ul {
+	position: absolute;
+	display: none;
+}
+ 
+#leftmenu #mainmenu ul li:hover ul {
+	/*display:block;*/
+}
+ 
+#leftmenu #mainmenu ul ul li {
+	display: block;
+}
+
+#leftmenu #mainmenu ul ul li a{
+	text-align: left;
+}
+
+.ace_scrollbar {
+	overflow-y: auto !important;
+}
+
+#creditionalBox, #descriptionBox, #aboutBox, #shortCutHelpBox{
+	display: none;
+	z-index: 90001;
+	position: absolute;
+	background-color: white;
+	padding: 10px;
+	border: 1px solid gold;
+	border-radius: 5px;
+	left: calc(50% - 200px);
+	width: 400px;
+	overflow: auto;
+	top: 20%;
+	box-shadow: 5px 5px 5px #c48800;
+}
+
+#descriptionBox h3, #creditionalBox h3{
+	border-radius: 5px;
+}
+
+#libsListMenuItems a, #fileListMenuItems a, #fileMenu, #libsMenu {
+	cursor: vertical-text;
+}
+
